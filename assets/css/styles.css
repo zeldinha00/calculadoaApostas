@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #282828;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#img img {
+    width: 32rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #383838;
+    border-radius: 10px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 2.25rem;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    content: '';
+    background-color: #16a34a;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.input-box label {
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    font-weight: bold;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #464646;   
+    pad: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus{
+    outline: none;
+}
+
+.btn-calcular {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #16a34a;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+#resultInvestimento2 {
+    font-weight: bold;
+}
+#resultInvestimento1 {
+    font-weight: bold;
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    background-color: #464646;
+    border-radius: 10px;
+    padding: 20px;
+}
+.resultados{
+    color: #cbd5e1;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ganhos {
+    font-weight: bold;
+    color: #16a34a;
+    font-size: 2rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    
+}
+.social i{
+    color: #a1a1a1;
+    font-size: 2.5rem;
+    margin: 0 10px;
+}
+
+.social i:hover{
+    color: #282828;
+}

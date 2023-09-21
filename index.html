@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.: Calculadora WinWin :.</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/img/icons8-calculator-32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container">
+        <section id="img">
+            <img src="assets/img/undraw_calculator_re_alsc.svg" alt="Calculadora">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 class="title">CALCULADORA WIN-WIN</h1>
+
+                <div class="input-box">
+                    <label for="investimento">
+                        Investimento
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <input type="number" id="investimento" required>
+                        <span>R$</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="investimento">
+                        Aposta 01
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <input type="text" id="bet1" required>
+                        <span>ODD</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="investimento">
+                        Aposta 02
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <input type="text" id="bet2" required>
+                        <span>ODD</span>
+                    </div>
+                </div>
+                
+
+                <button class="btn-calcular">Calcular</button>
+            </form>
+
+            <div id="infos" class="hidden">
+
+                <p class="resultados">Resultado:</p>
+                <p>Investimento Aposta 1: $ <span id="resultInvestimento1"></span></p>
+                <p>Investimento Aposta 2: $ <span id="resultInvestimento2"></span></p>
+
+                <div class="ganhos">
+                    <p >Ganhos Aposta 1: $ <span id="resultGanhos1"></span></p>
+                    <p >Ganhos Aposta 2: $ <span id="resultGanhos2"></span></p>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/roger0liveira/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/zeldinha00">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+                
+
+        </section>
+        
+    </main>
+
+   
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
