@@ -135,14 +135,9 @@ body {
 
 .ganhos {
     font-weight: bold;
-    color: #16a34a;
+    color: #cbd5e1;
     font-size: 2rem;
 }
-
-.hidden {
-    display: none !important;
-}
-
 
 .social {
     display: flex;
@@ -157,4 +152,31 @@ body {
 
 .social i:hover{
     color: #282828;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+    #img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    #calculator {
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    #infos p{
+        font-size: 1rem;
+    }
 }

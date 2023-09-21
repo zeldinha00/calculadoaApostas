@@ -20,7 +20,11 @@ form.addEventListener("submit", function(event){
     resultInvestimento1.textContent = investimento.toFixed(2);
     resultInvestimento2.textContent = investimento2;
     resultGanhos1.textContent = ganhos1;
-    resultGanhos2.textContent = ganhos2;    
+    resultGanhos2.textContent = ganhos2;
+
+    // Alterar a cor do texto com base nos valores
+    resultGanhos1.style.color = ganhos1 >= 0 ? 'green' : 'red';
+    resultGanhos2.style.color = ganhos2 >= 0 ? 'green' : 'red';
 
     document.getElementById('infos').classList.remove('hidden');
 });
