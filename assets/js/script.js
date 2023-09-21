@@ -10,21 +10,22 @@ form.addEventListener("submit", function(event){
     var possivelLucro = (investimento * bet1).toFixed(2);
     var investimento2 = (possivelLucro / bet2).toFixed(2);
     var ganhos1 = (investimento*(bet1 - 1) - investimento2).toFixed(2);
-    var ganhos2 = (investimento2*(bet2 - 1) - investimento).toFixed(2);
+    var oddSaida = (ganhos1 / investimento) + 1
+
 
     const resultInvestimento1 = document.getElementById('resultInvestimento1');
     const resultInvestimento2 = document.getElementById('resultInvestimento2');
-    const resultGanhos1 = document.getElementById('resultGanhos1');
-    const resultGanhos2 = document.getElementById('resultGanhos2');
+    const lucroTotal = document.getElementById('lucroTotal');
+
 
     resultInvestimento1.textContent = investimento.toFixed(2);
     resultInvestimento2.textContent = investimento2;
-    resultGanhos1.textContent = ganhos1;
-    resultGanhos2.textContent = ganhos2;
+    lucroTotal.textContent = ganhos1;
+
 
     // Alterar a cor do texto com base nos valores
-    resultGanhos1.style.color = ganhos1 >= 0 ? 'green' : 'red';
-    resultGanhos2.style.color = ganhos2 >= 0 ? 'green' : 'red';
+    lucroTotal.style.color = ganhos1 >= 0 ? 'green' : 'red';
+
 
     document.getElementById('infos').classList.remove('hidden');
 });
